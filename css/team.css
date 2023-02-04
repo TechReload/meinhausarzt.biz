@@ -1,0 +1,42 @@
+#profile-pic img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+}
+#profile-pic {
+    width: 30%;
+}
+#info-card {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 1200px;
+}
+.info-card {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.general-info-text{
+    padding-left: 10%;
+    color: white;
+    width: 100%;
+}
+.general-info-text p{
+    padding-top: 5%;
+    text-align: justify;
+}
+.general-info-text button{
+    margin-top: 5%;
+}
+#home-box div button {
+    width: 300px;
+    max-width: 100%;
+}
+#techreload-button:hover {
+    transform: scale(1.05, 1.1);
+}
