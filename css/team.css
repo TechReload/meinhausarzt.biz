@@ -23,7 +23,6 @@
 }
 .general-info-text{
     padding-left: 10%;
-    color: white;
     width: 100%;
 }
 .general-info-text p{
@@ -32,11 +31,4 @@
 }
 .general-info-text button{
     margin-top: 5%;
-}
-#home-box div button {
-    width: 300px;
-    max-width: 100%;
-}
-#techreload-button:hover {
-    transform: scale(1.05, 1.1);
 }
