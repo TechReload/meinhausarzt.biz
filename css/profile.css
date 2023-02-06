@@ -1,0 +1,42 @@
+.info {
+    width: 100%;
+    display: flex;
+}
+.info-image {
+    width: 30%;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    padding-top: 5%;
+    margin-bottom: 5%;
+    color: rgb(224, 224, 224);
+}
+.info-image img {
+    width: 95%;
+}
+.info-text {
+    background-color: rgb(100, 100, 100);
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+    padding: 5%;
+    color: rgb(224, 224, 224);
+}
+.info-text ul {
+    padding: 20px;
+}
+.info-text ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(255, 255, 255); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.info-text ul li {
+    color: rgb(0, 174, 255);
+    margin: 5px;
+    padding-top: 10px;
+}
+span {
+    color: rgb(224, 224, 224);
+}
