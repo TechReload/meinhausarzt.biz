@@ -14,7 +14,11 @@
   a:visited {
     text-decoration: none;
   }
+<<<<<<< Updated upstream
   .logo img {
+=======
+  header nav a img {
+>>>>>>> Stashed changes
     width: 200px;
   }
   #nav-link {
