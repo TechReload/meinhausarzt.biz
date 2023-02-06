@@ -74,6 +74,7 @@ nav ul li {
 }
 
 #hamburger-icon {
+  border-radius: 0px;
   margin: auto 0;
   display: none;
   cursor: pointer;
