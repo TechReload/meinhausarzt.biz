@@ -19,6 +19,16 @@ body{
 ul{
 	list-style: none;
 }
+table {
+	color: #d3d3d3;
+}
+th{
+	padding: 2px;
+	text-align: left;
+}
+td{
+	text-align: right;
+}
 .footer{
 	background-color: rgb(131, 131, 131);
     padding: 70px 0;
