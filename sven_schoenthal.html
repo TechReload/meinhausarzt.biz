@@ -34,31 +34,7 @@
                     // content.classList.toggle("no-content");
             }
         </script>
-        <header class="head">
-            <nav class="navbar">
-                <a href="index.html" class="logo" id="brand"><img src="img/logo.png"></a>
-                <ul class="nav-links">
-                    <li><a href="index.html" id="nav-link">Home</a></li>
-                    <li><a href="#" id="nav-link">Öffnungszeiten</a></li>
-                    <li><a href="team.html" id="nav-link">Das Team</a></li>
-                    <li><a href="contact.html" id="nav-link">Kontakt</a></li>
-                </ul>
-                <button type="button" class="button" id="button-header"><a href="#" target="_blank" rel="noopener noreferrer">Terminanfrage</a></button>
-            </nav>
-            <nav class="navbar-mobile">
-                <a href="/index.html" class="logo" id="mobile-brand"><img src="img/logo.png"></span></a>
-                <div onclick="mobileMenu(this)">
-                    <img src="img/menu-btn.png" id="hamburger-icon">
-                    <ul class="mobile-menu">
-                        <li><a href="index.html" id="nav-link">Home</a></li>
-                        <li><a href="#" id="nav-link">Öffnungszeiten</a></li>
-                        <li><a href="team.html" id="nav-link">Über Uns</a></li>
-                        <li><a href="contact.html" id="nav-link">Kontakt</a></li>
-                        <li><button type="button" class="button" id="button-header"><a href="#" target="_blank" rel="noopener noreferrer">Terminanfrage</a></button></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <header-component></header-component>
         <div class="content">
             <div class="info">
                 <div class="info-image">
@@ -106,37 +82,8 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Öffnungszeiten</h4>
-                        <ul>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">our services</a></li>
-                            <li><a href="impressum.html">privacy policy</a></li>
-                            <li><a href="#">newsletter</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Affiliate program</h4>
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=100089375204804"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/techreload.de/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://github.com/TechReload"><i class="fab fa-github"></i></a>
-                            <a href="https://www.tiktok.com/@techreload"><i class="fab fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <footer-component></footer-component>
+        <script src="js/templates.js" type="text/javascript" defer></script>
         <!--
         <div id="new-logo">
             <img src="img/Logo.png">

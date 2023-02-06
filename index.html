@@ -20,7 +20,6 @@
         <script defer src="js/index.js"></script>
         <!--Link some fonts-->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
     </head>
     <body>
         <script>
@@ -33,31 +32,7 @@
                     // content.classList.toggle("no-content");
             }
         </script>
-        <header class="header">
-            <nav class="navbar">
-                <a href="index.html" class="logo" id="brand"><img src="img/logo.png"></a>
-                <ul class="nav-links">
-                    <li><a href="index.html" id="nav-link">Home</a></li>
-                    <li><a href="reisemedizin.html" id="nav-link">Reisemedizin</a></li>
-                    <li><a href="contact.html" id="nav-link">Urlaub</a></li>
-                    <li><a href="patienteninfo.html" id="nav-link">Patienteninfo</a></li>
-
-                </ul>
-                <button type="button" class="button" id="button-header"><a href="#" target="_blank" rel="noopener noreferrer">Terminbuchung</a></button>
-            </nav>
-            <nav class="navbar-mobile">
-                <a href="/index.html" class="logo" id="mobile-brand"><img src="img/logo.png"></span></a>
-                <div onclick="mobileMenu(this)">
-                    <img src="img/menu-btn.png" id="hamburger-icon">
-                    <ul class="mobile-menu">
-                        <li><a href="index.html" id="nav-link">Home</a></li>
-                        <li><a href="reisemedizin.html" id="nav-link">Reisemedizin</a></li>
-                        <li><a href="contact.html" id="nav-link">Urlaub</a></li>
-                        <li><a href="patienteninfo.html" id="nav-link">Patienteninfo</a></li>
-                        <li><button type="button" class="button" id="button-header"><a href="#" target="_blank" rel="noopener noreferrer">Terminbuchung</a></button></li>
-                </div>
-            </nav>
-        </header>
+        <header-component></header-component>
         <div class="content">
             <div class="general-info">
                 <div>
@@ -141,42 +116,12 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Sprechzeiten</h4>
-                        <table>
-                            <tr><th>Montag</th><td rowspan="3">8:30 - 12:00 Uhr<br>16:00 - 18:00 Uhr</td></tr>
-                            <tr><th>Dienstag</th><td></td></tr>
-                            <tr><th>Mittwoch</th><td></td></tr>
-                            <tr><th>Donnerstag</th><td>8:30-12:00 Uhr</td></tr>
-                            <tr><th>Freitag</th><td>8:30-12:00 Uhr</td></tr>
-                            </table>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Affiliate program</h4>
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=100089375204804"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/techreload.de/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://github.com/TechReload"><i class="fab fa-github"></i></a>
-                            <a href="https://www.tiktok.com/@techreload"><i class="fab fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <footer-component></footer-component>
         <!--
         <div id="new-logo">
             <img src="img/Logo.png">
         </div>
     -->
+    <script src="js/templates.js" type="text/javascript" defer></script>
     </body>
 </html>
