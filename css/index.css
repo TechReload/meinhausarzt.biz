@@ -14,7 +14,7 @@
   a:visited {
     text-decoration: none;
   }
-  header nav a img {
+  #brand {
     width: 300px;
   }
   #nav-link {
