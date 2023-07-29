@@ -16,18 +16,15 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 }
-ul{
-	list-style: none;
+.footer-col p {
+	color: #e7e7e7;
 }
-table {
-	color: #d3d3d3;
+.footer-col p:hover {
+	color: white;
+	scale: 1.01;
 }
-th{
-	padding: 2px;
-	text-align: left;
-}
-td{
-	text-align: right;
+.footer-col p span {
+	color: white;
 }
 .footer{
 	background-color: rgb(131, 131, 131);
@@ -89,21 +86,20 @@ td{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 1000px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+	}
 }
-}
-@media(max-width: 767px){
+@media(max-width: 1000px){
   .footer-col{
     width: 100%;
+	}
 }
-}
-/*
+
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+	}
 }
-}
-*/
