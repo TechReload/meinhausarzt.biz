@@ -1,0 +1,57 @@
+.other ul li a {
+    color: black;
+}
+hr {
+    all: revert;
+    border: 1px solid black;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    margin-bottom: 10px;
+}
+#head {
+    font-style: bold;
+    font-size: x-large;
+}
+.urlaubszeiten{
+    margin-top: 150px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.year_1 {
+    float: left;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.year_2 {
+    float: left;
+    margin-top: 20px;
+}
+.other {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .urlaubszeiten {
+        max-width: 80%;
+    }
+    .other {
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .urlaubszeiten {
+        max-width: 95%;
+    }
+    .other {
+        max-width: 95%;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Öffnungszeiten</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/footer.css" type="text/css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/oeffnungszeiten.css" type="text/css">
+        <script defer src="js/index.js"></script>
+        <!--Link some fonts-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <script>
+            function mobileMenu(menu){
+                toggleMobileMenu(menu);
+                const element = document.querySelector('.hero');
+                element.classList.toggle("mobile-hero");
+                // Hide the content when navigating
+                const content = document.querySelector('.content');
+                content.classList.toggle("no-content");
+            }
+        </script>
+        
+        <header-component></header-component>
+        <div class="urlaubszeiten">
+            <div class="info">
+                <p>Vertretung übernimmt die Hausarztpraxis Fr. Elena Samorej. Ab 18:00 h ist die Notfallpraxis Esslingen zuständig diese erreichen Sie unter Tel.: 116 117</p>
+            </div>
+            <br>
+            <hr>
+            <h1>Unsere Urlaubszeiten</h1>
+            <hr>
+            <br>
+            <div class="year_1">
+                <ul>
+                    <li id="head">Urlaube 2023</li>
+                    <br>
+                    <li>20.2.-24.2.2023</li>
+                    <li>03.04.-14.4.2023</li>
+                    <li>27.7.-18.8.2023</li>
+                    <li>30.10.-3.11.2023</li>
+                    <li>2.10.2023</li>
+                    <li>19.5.2023</li>
+                    <li>9.6.2023</li>
+                </ul>
+            </div>
+            <div class="year_2">
+                <ul>
+                    <li id="head">Urlaube 2024</li>
+                    <br>
+                    <li>20.2.-24.2.2023</li>
+                    <li>03.04.-14.4.2023</li>
+                    <li>27.7.-18.8.2023</li>
+                    <li>30.10.-3.11.2023</li>
+                    <li>2.10.2023</li>
+                    <li>19.5.2023</li>
+                    <li>9.6.2023</li>
+                </ul>
+            </div>
+        </div>
+        <div class="other">
+            <hr>
+            <h1>Termine an denen die Praxis geschlossen ist</h1>
+            <hr>
+            <br>
+            <br>
+            <ul>
+                <li id="head">Aufgrund von Fortbildungen ist die Praxis zu dieser Zeit geschlossen:</li>
+                <br>
+                <li id="head">------</li>
+            </ul>
+            <br>
+            <hr>
+            <h1>Kontakte</h1>
+            <hr>
+            <br>
+            <br>
+            <ul>
+                <li id="head">Mo. bis Do. ab 18:00</li>
+                <li>Notfallpraxis Esslingen Tel.: 116117</li>
+                <li id="head">Fr. ab 16:00</li>
+                <li>Notfallpraxis Esslingen Tel.: 116117</li>
+                <li id="head">An Feiertagen, Brückentagen und Wochenenden</li>
+                <li>Notfallpraxis Esslingen Tel.: 116117</li>
+                <br>
+                <br>
+                <li id="head" style="font-size: xx-large;">Unsere Vertreter</li>
+                <br>
+                <li>Hausarztpraxis Fr. Elena Samorej</li>
+                <li><a href="https://praxis-dr-anthoni.de/">Hausarztpraxis Hr. Dr. med. Christian Anthoni</a></li>
+            </ul>
+        </div>
+        <footer-component></footer-component>
+        <script src="js/templates.js" type="text/javascript" defer></script>
+    </body>
+</html>

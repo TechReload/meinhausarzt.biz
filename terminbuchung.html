@@ -25,70 +25,7 @@
     <body>
         <header-component></header-component>
         <div class="terminbuchung-formular">
-            <div id="yk92i">
-                <termed>
-                    <div class="backdrop eHidden"></div>
-                    <div class="navContainer">
-                        <input type="button" class="loginButton eShow" onclick="javascript:handleClickyk92i('login')" value="Anmelden" control-id="ControlID-1">
-                        <input type="button" class="logoutButton eHidden" onclick="javascript:handleClickyk92i('logout')" value="Abmelden" control-id="ControlID-2">
-                    </div>
-                    <div class="loadingContainer eHidden">
-                        <p>Daten werden geladen...</p>
-                        <div class="spinner"></div>
-                    </div>
-                    <!--<div class="formContainer eHidden">-->
-                        <div class="loginRegContainer eHidden">
-                            <input type="button" onclick="javascript:handleClickyk92i('closeLogin')" value="schließen" control-id="ControlID-23">
-                            <div class="loginRegNav">
-                                <span class="loginBtn active" onclick="javascript:handleClickyk92i('showLogin')">Anmelden</span>
-                                <span class="regBtn" onclick="javascript:handleClickyk92i('showRegistration')">Registrieren</span>
-                            </div>
-                            <div class="loginContainer eShow"></div>
-                            <div class="registrationContainer eHidden"></div>
-                        </div>
-                        <div class="userContainer"></div>
-                        <div class="bookingContainer eHidden"></div>
-                        <div class="waitingRoomContainer eHidden"></div>
-                        <div class="eventListContainer eHidden"></div>
-                        <div class="overviewContainer eHidden"></div>
-                        <div class="requestContainer eHidden">
-                            <h2>Rezept- und Überweisungsbestellung</h2>
-                            <label for="requestType">Art Ihrer Anfrage</label>
-                            <select class="requestType"></select>
-                            <div class="requestTypeContainer"></div>
-                            <input type="button" onclick="javascript:handleClickyk92i('closeRequest')" value="Abbrechen">
-                        </div>
-                    <!--</div>-->
-                    <div class="backdropMessage eHidden"></div>
-                    <div class="messageContainer eHidden">
-                        <h2 class="messageTitle"></h2>
-                        <p class="messageText"></p>
-                        <input type="button" onclick="javascript:handleClickyk92i('closeMessage')" value="OK">
-                    </div>
-                </termed>
-                <a href="https://termed.de/" id="termed-logo" target="_blank" style="max-width: 40%; display: table; position: relative;">
-                    <img alt="TerMed.de Logo" src="https://termed.de/doctor/res/images/logo_termed.png">
-                </a>
-                <a id="fs-header-link-yk92i" class="arzt-link" href="https://termed.de//arzt/5681/-sprechstunde-15-min" target="_blank">
-                    <p style="margin-top:10px">
-                        <strong>
-                            <span style="color:#00b6e8">Allgemeinarzt:ärztin und innere Medizin </span>
-                            <br> Sprechstunde 15 min.
-                        </strong>
-                    </p>
-                </a>
-                <p id="fs-header-text-yk92i" class="title"><b>Terminbuchung</b></p>
-                <p id="fs-header-text-yk92i" class="text">Sichern Sie sich den <b>nächsten freien Termin</b> in unserer Praxis. Zur Anmeldung einfach den Arzt oder einen gewünschten Termin anklicken.</p>
-                <p>Behandlerauswahl</p>
-                <select class="dselect" control-id="ControlID-3">
-                    <option class="ropt" value="">Behandler auswählen</option>
-                    <option class="ropt" value="5681"> Sprechstunde 15 min.</option>
-                    <option class="ropt" value="5682"> Sprechstunde 15 min</option>
-                    <option class="ropt" value="5683"> Akutsprechstunde   Tgl.</option>
-                </select>
-                <div class="reasonContainer"></div>
-                <div id="tmcontent" class="events"></div>
-            </div>
+            <div id="yk92i"></div>
             <script type="text/javascript" src="https://api.termed.de/v2/facharzt_widget.php?id=yk92i&amp;w=5d8392d462"></script>
         </div>
         <footer-component></footer-component>

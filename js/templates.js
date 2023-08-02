@@ -11,10 +11,10 @@ class Header extends HTMLElement {
                 <ul class="nav-links">
                     <li><a href="index.html" id="nav-link">Home</a></li>
                     <li><a href="reisemedizin.html" id="nav-link">Reisemedizin</a></li>
-                    <li><a href="contact.html" id="nav-link">Urlaub</a></li>
+                    <li><a href="oeffnungszeiten.html" id="nav-link">Öffnungszeiten</a></li>
                     <li><a href="patienteninfo.html" id="nav-link">Patienteninfo</a></li>
                 </ul>
-                <button type="button" class="button" id="button-header"><a href="#" target="_blank" rel="noopener noreferrer">Terminbuchung</a></button>
+                <button type="button" class="button" id="button-header"><a href="terminbuchung.html" rel="noopener noreferrer">Terminbuchung</a></button>
             </nav>
             <nav class="navbar-mobile">
                 <a href="/index.html" class="logo" id="mobile-brand"><img src="img/logo.png"></span></a>
@@ -23,9 +23,9 @@ class Header extends HTMLElement {
                     <ul class="mobile-menu">
                         <li><a href="index.html" id="nav-link">Home</a></li>
                         <li><a href="reisemedizin.html" id="nav-link">Reisemedizin</a></li>
-                        <li><a href="contact.html" id="nav-link">Urlaub</a></li>
+                        <li><a href="oeffnungszeiten.html" id="nav-link">Öffnungszeiten</a></li>
                         <li><a href="patienteninfo.html" id="nav-link">Patienteninfo</a></li>
-                        <li><button type="button" class="button" id="button-header"><a href="#" target="_blank" rel="noopener noreferrer">Terminbuchung</a></button></li>
+                        <li><button type="button" class="button" id="button-header"><a href="terminbuchung.html" rel="noopener noreferrer">Terminbuchung</a></button></li>
                     </ul>
                 </div>
             </nav>
@@ -54,10 +54,12 @@ class Footer extends HTMLElement {
                         </a>
                         </div>
                         <div class="footer-col">
-                            <h4>Sprechzeiten</h4>
-                            <p><span>Montag - Mittwoch</span><br>8:30-12:00 Uhr und 16:00-18:00 Uhr</p>
-                            <br>
-                            <p><span>Donnerstag - Freitag</span><br>8:30-12:00 Uhr</p>
+                            <a href="oeffnungszeiten.html">
+                                <h4>Sprechzeiten</h4>
+                                <p><span>Montag - Mittwoch</span><br>8:30-12:00 Uhr und 16:00-18:00 Uhr</p>
+                                <br>
+                                <p><span>Donnerstag - Freitag</span><br>8:30-12:00 Uhr</p>
+                            </a>
                         </div>
                         <div class="footer-col">
                             <h4>Kontakt</h4>

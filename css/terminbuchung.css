@@ -1,5 +1,39 @@
 .terminbuchung-formular{
-    max-width: 85%;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 200px;
+    margin-bottom: 200px;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.terminbuchung-formular * {
+    all: revert;
+}
+.terminbuchung-formular a {
+    text-decoration: none;
+}
+.terminbuchung-formular a:visited {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1980px) {
+    .terminbuchung-formular{
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .terminbuchung-formular{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
 }
