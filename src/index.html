@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start logo-container"
+          >
+            <!-- Replace the logo with the text "Praxis Dr. Schoenthal" -->
+            <a href="index.html"
+              ><span class="text-white text-xl font-semibold"
+                >Praxis Dr. Schoenthal</span
+              ></a
+            >
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="index.html"
+                class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                aria-current="page"
+              >
+                Start
+              </a>
+              <a
+                href="terminbuchung.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+              >
+                Termine
+              </a>
+              <a
+                href="reisemedizin.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+              >
+                Reisemedizin
+              </a>
+              <a
+                href="reisemedizin.html"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+              >
+                Calendar
+              </a>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <button
+              type="button"
+              class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              <span class="sr-only">View notifications</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="hidden sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+            aria-current="page"
+          >
+            Start
+          </a>
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >
+            Team
+          </a>
+          <a
+            href="reisemedizin.html"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >
+            Reisemedizin
+          </a>
+          <a
+            href="reisemedizin.html"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >
+            Calendar
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- JavaScript to handle the mobile menu toggle -->
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        const isExpanded =
+          mobileMenuButton.getAttribute("aria-expanded") === "true";
+        mobileMenuButton.setAttribute("aria-expanded", !isExpanded);
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <div class="overflow-hidden bg-white py-10">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-indigo-600">
+                WILLKOMMEN BEI
+              </h2>
+              <p
+                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                DR. MED. SVEN SCHÖNTHAL
+              </p>
+              <p class="mt-6 text-lg leading-8 text-gray-600">
+                Ihre Gesundheit - Unser Anliegen. In unserer modernen Praxis
+                stehen Sie als Mensch im Mittelpunkt. Wir bieten Ihnen eine
+                umfassende hausärztliche Versorgung für alle Lebenslagen.
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <img
+                      src="img/gesundheits-check.png"
+                      class="absolute left-1 top-1 h-5 w-5"
+                    />
+                    Ganzheitliche Betreuung
+                  </dt>
+                  <dd class="inline">
+                    Wir kümmern uns um Ihre Gesundheit in ihrer Gesamtheit und
+                    legen Wert auf präventive Maßnahmen, um langfristiges
+                    Wohlbefinden zu fördern.
+                  </dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <img
+                      src="img/medizinisch.png"
+                      class="absolute left-1 top-1 h-5 w-5"
+                    />
+
+                    Akute & Chronische Versorgung
+                  </dt>
+                  <dd class="inline">
+                    Von Erkältungen bis zu chronischen Erkrankungen - wir bieten
+                    Ihnen kompetente Behandlungen und begleiten Sie auf Ihrem
+                    Weg zur Genesung.
+                  </dd>
+                </div>
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <img
+                      src="img/beratung.png"
+                      class="absolute left-1 top-1 h-5 w-5"
+                    />
+                    Individuelle Beratung
+                  </dt>
+                  <dd class="inline">
+                    Ihre Fragen sind wichtig. Wir nehmen uns Zeit für eine
+                    umfassende Beratung zu Gesundheit, Lebensstil und Vorsorge,
+                    um gemeinsam die besten Entscheidungen zu treffen.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <img
+            src="img/empfang.jpg"
+            alt="Product screenshot"
+            class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            width="2432"
+            height="1442"
+          />
+        </div>
+
+        <div class="flex items-center">
+          <div class="w-1/2">
+            <img
+              class="rounded-full object-cover w-80 h-80 my-20 shadow-xl ring-1 ring-gray-400/10"
+              src="/img/profile_pic_sven_schoenthal.jpeg"
+              alt="Der Doktor"
+            />
+          </div>
+          <div class="w-1/2">
+          <p class="mr-4 text-gray-600 font-bold text-2xl text-center" >
+            Wir möchten umfassend für Sie da sein<br>Als Partner für Ihre gesamte
+            Gesundheit.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-white 0 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="techreload.com" class="hover:underline">TechReload™</a>. All
+          Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
